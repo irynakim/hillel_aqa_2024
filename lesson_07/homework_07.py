@@ -6,15 +6,23 @@ print('task1----------------------------------------------')
 """
 
 
+# def multiplication_table(number):
+#     multiplier = 1
+#     while multiplier <= 9:
+#         result = number * multiplier
+#         if result < 25:
+#             print(str(number) + "x" + str(multiplier) + "=" + str(result))
+#         multiplier += 1
+# multiplication_table(3)
+#
+# print('----------------------')
 def multiplication_table(number):
     multiplier = 1
-    while multiplier <= 9:
+    result = 0
+    while result <= 25:
+        print(str(number) + "x" + str(multiplier) + "=" + str(result))
         result = number * multiplier
-        if result < 25:
-            print(str(number) + "x" + str(multiplier) + "=" + str(result))
         multiplier += 1
-
-
 multiplication_table(3)
 
 print('\ntask2----------------------------------------------')
