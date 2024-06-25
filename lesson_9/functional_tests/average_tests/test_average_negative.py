@@ -17,7 +17,6 @@ class AverageNegativeTest(unittest.TestCase):
             average(input_param)
 
         res = error.exception
-        pass
         error_message = res.args[0]
 
         self.assertEqual(error_message, expected_message)
