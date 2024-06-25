@@ -34,6 +34,5 @@ class AverageNegativeTest(unittest.TestCase):
 
         self.assertEqual(error_message, expected_message)
 
-
 if __name__ == '__main__':
     unittest.main()
