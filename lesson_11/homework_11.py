@@ -21,13 +21,12 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("log_event")
 
-@pytest.mark.parametrize ('username,status',
+
+@pytest.mark.parametrize('username,status',
                          [('success_user', 'success'),
                           ('expired_user2', 'expired'),
                           ('failed_user3', 'failed')],
                          ids=['success_user', 'expired_user', 'failed_user'])
-
-
 def test_log_event(username, status):
     log_message = f"Login event - Username: {username}, Status: {status}"
     logger.info(log_message)
@@ -46,4 +45,3 @@ def test_log_event(username, status):
         logger.warning(verification_log_message)
     else:
         logger.error(verification_log_message)
-
